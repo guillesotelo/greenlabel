@@ -1,38 +1,457 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+
+
+/* -----LOGIN----- */
+.log-text {
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 1.5vw;
+  font-weight: lighter;
+  margin-bottom: 2.5vw;
+  color:rgb(124, 141, 125)
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.log-input {
+  background-color: white;
+  border: none;
+  margin-bottom: 1vw;
+  padding-left: 1vw;
+  height: 2.7vw;
+  width: 19vw;
+  box-shadow: 1px 1px 5px grey;
+  color: gray
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.login-card {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-right: 2vw;
+}
+
+.img-logo {
+  height: 15vw;
+  width: auto;
+  margin: 5vw 5vw 3vw 2vw;
+}
+
+.login-btn {
+  background-color: rgb(233, 233, 233);
+  height: 3vw;
+  width: 20vw;
+  margin-bottom: 2.5vw;
+  border: none;
+  color: rgb(82, 82, 82);
+  font-size: 1.2vw;
+  box-shadow: 2px 2px 5px grey;
+  transition: 0.3s;
+}
+
+.signup-btn {
+  background-color: white;
+  border: none;
+  font-size: 1vw;
+  color:rgb(25, 68, 25);
+  transition: 0.3s;
+}
+
+.signup-btn:hover {
+  color: rgb(124, 141, 125);
+}
+
+.login-btn:hover {
+  background-color: rgb(218, 231, 218);
+}
+
+
+
+
+
+/* -----HOME----- */
+.home {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.log-input:focus {
+  outline: none;
+}
+
+.log-btns {
+  display: flex;
+  flex-direction: column;
+  /* margin-top: 1vw; */
+}
+
+.home-body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+
+/* -----NAVBAR----- */
+.navbar {
+  height: 7vw;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; 
+  border-bottom: 2px solid gray; 
+  padding-bottom: 1vw;
+  box-shadow: 1px 1px 5px grey;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  width: 99%;
+}
+
+.logo {
+  height: 6vw;
+  width: auto;
+  margin: 0.6vw 0vw 0vw 0.7vw;
+  transition: 0.3s;
+}
+
+.logo:hover {
+  transform: scale(1.01);
+}
+
+img .logo {
+  padding: 0;
+  margin: 0
+}
+
+.logo-btn {
+  background-color: white;
+  border: none
+}
+
+.log-btn {
+  background-color: rgb(212, 212, 212);
+  height: 3vw;
+  width: 7vw;
+  margin-right: 2.5vw;
+  margin-top: 0.5vw;
+  border: none;
+  /* border-radius: 0.5vw;   */
+  color: rgb(82, 82, 82);
+  font-size: 1.2vw;
+  box-shadow: 2px 2px 5px grey;
+  transition: 0.3s;
+}
+
+.log-btn:hover {
+  background-color: rgb(212, 226, 213);
+}
+
+
+
+
+
+/* ----SEARCH----- */
+.search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-title {
+  font-family: 'Style Script', cursive;
+  font-size: 2.5vw;
+  color:rgb(25, 68, 25);
+  font-weight: lighter;
+  padding: 0;
+  margin-top: 3.3vw;
+}
+
+.search {
+  outline: none;
+  border: none;
+  display: inline-block;
+  height: 2.5vw;
+  width: 30vw;
+  border-radius: 1vw;
+  padding-left: 1vw;
+  box-shadow: 1px 1px 5px grey;
+  margin-top: 10vw;
+}
+
+.check-container {
+  width: 35vw;
+  margin-top: 1vw;
+}
+
+.check {
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 1.2vw;
+  font-weight: lighter;
+  margin: 1vw 0vw 0vw 3vw
+}
+
+.filter {
+  outline: none;
+  border: none;
+  display: inline-block;
+  height: 2.5vw;
+  width: 10vw;
+  border-radius: 1vw;
+  padding-left: 1vw;
+  margin-Top: 1vw;
+  margin-right: 2vw;
+  box-shadow: 1px 1px 5px grey;
+}
+
+.filter-container {
+  padding-top: 0;
+  margin:0
+}
+
+.search-btn {
+  background-color: rgb(212, 212, 212);
+  border: none;
+  margin-left: 1vw;
+  height: 2.7vw;
+  width: 6.5vw;
+  font-size: 1.5vw;
+  box-shadow: 1px 1px 5px grey;
+  border-radius: 1vw;
+  color: rgb(78, 78, 78);
+  transition: 0.3s;
+}
+
+.search-btn:hover {
+  background-color: rgb(225, 235, 225);
+}
+
+.search-bar {
+  margin-top: 1vw;
+}
+
+
+
+
+
+/*------ TREE CARD ------*/
+.no-trees {
+  margin-top: 7vw;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 2vw;
+  color:rgb(235, 235, 235)
+}
+
+.len-results {
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 1.3vw;
+  font-weight: lighter;
+  font-style: oblique;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 1vw;
+  color:rgb(206, 206, 206)
+}
+
+.tree-card-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.tree-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 2px 2px 8px grey;
+  margin: 1vw;
+  width: 22vw;
+  height: 30vw;
+  transition: 0.3s;
+}
+
+.tree-card:hover {
+  transform: scale(1.01);
+  box-shadow: 2px 2px 16px grey;
+}
+
+.tree-img {
+  align-self: center;
+  width: 13vw;
+  height: auto;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  border-bottom: 1px solid rgb(207, 207, 207);
+}
+
+.tree-specs {
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-self: center;
 }
 
-.App-link {
-  color: #61dafb;
+.tree-spec {
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 0.8vw;
+  font-weight: lighter;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 0.1vw;
+  padding-bottom: 0.2vw;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tree-label {
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 1.2vw;
+  font-weight: lighter;
+  padding: 0;
+  margin: 0;
+  padding-top: 0.5vw;
+}
+
+.tree-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.div-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.name-tree {
+  outline: none;
+  border: none;
+  display: inline-block;
+  font-size: 1.3vw;
+  height: 2vw;
+  width: 14vw;
+  align-self: center;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  text-align: center;
+  border: 1px solid rgb(206, 206, 206);
+  border-radius: 1vw;
+}
+
+.name-btn {
+  background-color: rgb(212, 212, 212);
+  height: 2.5vw;
+  width: 6vw;
+  align-self: center;
+  margin-bottom: 2vw;
+  border: none;
+  border-radius: 1vw;  
+  color: rgb(82, 82, 82);
+  font-size: 1.2vw;
+  box-shadow: 2px 2px 5px grey;
+  transition: 0.3s;
+}
+
+.name-btn:hover {
+  background-color: rgb(212, 226, 213);
+}
+
+.already {
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 1.4vw;
+  text-align: center;
+  font-weight: lighter;
+  font-style: italic;
+  color: brown;
+  background-color: rgb(231, 221, 221);
+  border-top: 1px solid brown;
+  border-bottom: 1px solid brown;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+  margin-bottom: 2vw;
+}
+
+.already-labeled {
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 1.4vw;
+  text-align: center;
+  font-weight: lighter;
+  font-style: italic;
+  color: rgb(62, 101, 104);
+  background-color: rgb(222, 231, 221);
+  border-top: 1px solid rgb(62, 101, 104);
+  border-bottom: 1px solid rgb(62, 101, 104);
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+  margin-bottom: 2vw;
+}
+
+
+
+
+/*------ ERROR POPUP ------*/
+.invalid {
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  font-size: 1.7vw;
+  width: 14vw;
+  padding: 0.6vw;
+  background-color: rgb(238, 213, 213);
+  color: rgb(95, 85, 85);
+  transition: 0.5s;
+}
+
+.invalid2 {
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  font-size: 1.7vw;
+  width: 13vw;
+  padding: 0.6vw;
+  background-color: rgb(238, 213, 213);
+  color: rgb(95, 85, 85);
+  transition: 0.5s;
+}
+
+.invalid-transparent {
+  height: 0;
+  opacity: 0;
+}
+
+
+
+
+
+/*------ PROFILE ------*/
+.hello {
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 3vw;
+  padding-left: 3vw;
+  padding-top: 8vw;
+  font-weight: lighter;
+  color: rgb(95, 95, 95);
+  /* margin-top: 8vw; */
+}
+
+.my-trees {
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 2vw;
+  font-weight: lighter;
+  text-align: center;
+  font-style: italic;
+  color: rgb(95, 95, 95);
+  margin-bottom: 3vw;
+}
+
+.tree-grid-me {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-self: center;
+  align-content: center;
+  padding-left: 10%;
+  width: 80%;
 }
